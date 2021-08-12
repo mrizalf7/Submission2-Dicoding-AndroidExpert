@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dicoding.eightProject.core.ui.MovieAdapter
-import com.dicoding.eightProject.detail.DetailMovieActivity
+import com.dicoding.ninthProject.core.ui.MovieAdapter
+import com.dicoding.ninthProject.detail.DetailMovieActivity
 import com.example.favorite.databinding.FragmentFavoriteBinding
 import com.example.favorite.di.favModule
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -24,7 +24,7 @@ class FavoriteFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         return binding.root
     }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dicoding.eightProject">
+    package="com.dicoding.ninthProject">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.dicoding.eightProject.MyApplication"
+        android:name="com.dicoding.ninthProject.MyApplication"
         android:icon="@drawable/movie_logo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/movie_logo"
@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TourismApp">
 
         <activity
-            android:name="com.dicoding.eightProject.MainActivity"
+            android:name="com.dicoding.ninthProject.MainActivity"
             android:theme="@style/Theme.TourismApp.NoActionBar"
             android:exported="true">
             <intent-filter>
@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name="com.dicoding.eightProject.detail.DetailMovieActivity"
+            android:name="com.dicoding.ninthProject.detail.DetailMovieActivity"
             android:label="@string/title_activity_detail_home"
             android:theme="@style/Theme.TourismApp.NoActionBar" />
     </application>

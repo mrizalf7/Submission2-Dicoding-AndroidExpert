@@ -11,7 +11,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.dicoding.eightProject"
+        applicationId "com.dicoding.ninthProject"
         minSdkVersion 16
         targetSdkVersion 31
         versionCode 1
@@ -39,11 +39,20 @@ android {
         viewBinding = true
     }
     dynamicFeatures = [':favorite']
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src\\main\\java', 'src\\main\\java\\2'
+            }
+        }
+    }
 }
 
 dependencies {
     implementation project(":core")
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.test:monitor:1.4.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 
 }

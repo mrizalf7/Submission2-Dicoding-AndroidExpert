@@ -1,4 +1,4 @@
 include ':core'
-rootProject.name='eightProject'
+rootProject.name='ninthProject'
 include ':app'
 include ':favorite'
