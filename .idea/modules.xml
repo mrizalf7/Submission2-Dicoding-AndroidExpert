@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eightProject.iml" filepath="$PROJECT_DIR$/.idea/modules/eightProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/eightProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/eightProject.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/eightProject.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/eightProject.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/favorite/eightProject.favorite.iml" filepath="$PROJECT_DIR$/.idea/modules/favorite/eightProject.favorite.iml" />
+    </modules>
+  </component>
+</project>
