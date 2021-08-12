@@ -4,11 +4,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dicoding.ninthProject.core.R
 import com.dicoding.ninthProject.core.databinding.ItemListMovieBinding
 import com.dicoding.ninthProject.core.domain.model.Movie
+import com.dicoding.ninthProject.core.utils.DiffUtils
 
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ListViewHolder>() {
 
@@ -17,9 +19,11 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ListViewHolder>() {
 
     fun setData(newListData: List<Movie>?) {
         if (newListData == null) return
+        val diffUtilCallback = DiffUtils(listData, newListData)
+        val diffResult = DiffUtil.calculateDiff(diffUtilCallback)
         listData.clear()
         listData.addAll(newListData)
-        notifyDataSetChanged()
+        diffResult.dispatchUpdatesTo(this)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
